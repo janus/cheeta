@@ -1,0 +1,27 @@
+Cheeta is just lib to get started when creating database tables using Python.
+It is still basic , not much in it for now. But one can still try a few examples.
+To try it out, open python file names scheme.py and copy and paste the below.
+After open main.py, and update your database details. When you are done, just 
+run main.
+
+import model
+	  
+
+class UserTable(model.thebase):
+	name = model.CharClass()
+	age = model.IntClass()
+	place_of_birth = model.CharClass()
+	
+class AddressTable(model.thebase):
+	user_name = UserTable("name")
+	street_name = model.CharClass()
+	city_name = model.CharClass()
+	street_number = model.IntClass()
+	state_name = model.CharClass()
+	country_name = model.CharClass()
+
+If you notice bugs, please mail them to me. In case you have ideas on how to make
+this app better, just let me know too.
+	
+	
+	
