@@ -4,7 +4,6 @@ To try it out, open python file names scheme.py and copy and paste the below.
 After open main.py, and update your database details. When you are done, just 
 run main.
 
-import model
 	  
 
 class UserTable(model.thebase):
